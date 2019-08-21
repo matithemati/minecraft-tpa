@@ -1,0 +1,5 @@
+main: com.mati.tpa.Main
+version: 1.0
+name: tpa
+commands:
+  tpa:
