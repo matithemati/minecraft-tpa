@@ -31,16 +31,18 @@ public class Main extends JavaPlugin {
 
 				else {
 					Location loc = target.getLocation();
-					player.sendMessage(ChatColor.BLUE + "[TPA] " + ChatColor.GREEN + "Pomyœlnie przeteleportowano do " + ChatColor.YELLOW + target.getName());
+					player.sendMessage(ChatColor.BLUE + "[TPA] " + ChatColor.GREEN + "Pomyœlnie przeteleportowano do "
+							+ ChatColor.YELLOW + target.getName());
 					player.teleport(loc);
-					target.sendMessage(ChatColor.BLUE + "[TPA] " + ChatColor.YELLOW +  player.getName() + ChatColor.GREEN + " w³aœnie siê do Ciebie przeteleportowa³!");
+					target.sendMessage(ChatColor.BLUE + "[TPA] " + ChatColor.YELLOW + player.getName() + ChatColor.GREEN
+							+ " w³aœnie siê do Ciebie przeteleportowa³!");
 				}
 
 			}
-		}
-		
-		else {
-			System.out.println("Nie mo¿esz u¿yæ tej komendy z poziomu konsoli!");
+
+			else {
+				System.out.println("Nie mo¿esz u¿yæ tej komendy z poziomu konsoli!");
+			}
 		}
 
 		return false;
