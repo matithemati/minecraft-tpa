@@ -30,12 +30,7 @@ public class Main extends JavaPlugin {
 				}
 
 				else {
-					player.sendMessage(target.getName());
 					Location loc = target.getLocation();
-					int x = loc.getBlockX();
-					int y = loc.getBlockY();
-					int z = loc.getBlockZ();
-
 					player.sendMessage(ChatColor.BLUE + "[TPA] " + ChatColor.GREEN + "Pomyœlnie przeteleportowano do " + ChatColor.YELLOW + target.getName());
 					player.teleport(loc);
 					target.sendMessage(ChatColor.BLUE + "[TPA] " + ChatColor.YELLOW +  player.getName() + ChatColor.GREEN + " w³aœnie siê do Ciebie przeteleportowa³!");
